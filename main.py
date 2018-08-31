@@ -25,10 +25,10 @@ form = """<!DOCTYPE html>
         </style>
     </head>
     <body>
-        <form action="/" method='POST' name="hi">
+        <form action="/" method='POST' name="hi" id="hi">
             <label for="rot">
                 Rotate by:<input type="text" id="rot" name="rot" value="0"/><br>
-                <input type="textarea" id="text" name="text" value="{}"/><br>
+                <textarea id="text" name="text" form="hi">{}</textarea><br>
                 <input type="submit"/>
             </label>
         </form>
